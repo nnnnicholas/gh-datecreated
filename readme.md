@@ -47,13 +47,13 @@ sudo yum install jq
 First, ensure the script has execute permissions. You can add this permission using the following command:
 
 ```bash
-chmod +x script.sh
+chmod +x gh-datecreated.sh
 ```
 
 Then, you can run the script using this command:
 
 ```bash
-./script.sh [repository_url]
+./gh-datecreated.sh [repository_url]
 ```
 
 Replace `[repository_url]` with the URL of the Github repository. The script will output the creation date of the provided repository.
@@ -67,7 +67,7 @@ If you get an error saying "Permission denied" when trying to run the script, it
 ## Example
 
 ```bash
-./script.sh https://github.com/tensorflow/tensorflow
+./gh-datecreated.sh https://github.com/tensorflow/tensorflow
 ```
 
 This will fetch the creation date of the Tensorflow repository on Github.
