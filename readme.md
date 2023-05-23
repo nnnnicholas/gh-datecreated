@@ -9,6 +9,18 @@ This script fetches the creation date of a Github repository using Github's REST
 - jq (to parse JSON data)
 - date (to format dates)
 
+## Cloning the Repository
+To clone this repository to your local machine, use the following command:
+
+```bash
+git clone https://github.com/nnnnicholas/gh-datecreated.git
+```
+This will create a new directory named gh-datecreated in your current directory. Navigate into the new directory to find the script and this README file:
+
+```bash
+cd gh-datecreated
+```
+
 ## How to Install Dependencies
 
 ### Install Curl
@@ -32,13 +44,21 @@ sudo yum install jq
 
 ## Usage
 
+First, ensure the script has execute permissions. You can add this permission using the following command:
+
+```bash
+chmod +x script.sh
+```
+
+Then, you can run the script using this command:
+
 ```bash
 ./script.sh [repository_url]
 ```
 
-You need to replace `[repository_url]` with the URL of the Github repository. 
+Replace `[repository_url]` with the URL of the Github repository. The script will output the creation date of the provided repository.
 
-The script will output the creation date of the provided repository.
+If you get an error saying "Permission denied" when trying to run the script, it's likely because the script does not have execute permissions. Use the `chmod +x` command above to fix this.
 
 ## Error Messages
 
